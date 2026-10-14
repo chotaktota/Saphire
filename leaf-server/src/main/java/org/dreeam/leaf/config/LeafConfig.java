@@ -89,6 +89,8 @@ public class LeafConfig {
             purgeOutdated();
             loadConfig(true);
 
+            dev.aethereal.SaphireConfig.load(); // Saphrr - Saphire config
+
             LOGGER.info("Successfully loaded config in {}ms.", (System.nanoTime() - begin) / 1_000_000);
         } catch (Exception e) {
             LOGGER.error("Failed to load config modules!", e);
